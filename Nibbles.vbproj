@@ -4,6 +4,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>Nibbles</RootNamespace>
     <TargetFramework>netcoreapp3.0</TargetFramework>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
 
 </Project>
