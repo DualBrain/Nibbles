@@ -851,25 +851,27 @@ Module Nibbles
   End Function
 
   Public Sub Resize(cols%, rows%)
-    ' HACK!!! Resize the console window attempting to remove scroll bars.
-    Try
-      Console.SetWindowSize(cols%, rows%) ' Set the windows size...
-    Catch ex As Exception
-      Console.WriteLine("1 - " & ex.ToString)
-      Threading.Thread.Sleep(5000)
-    End Try
-    Try
-      Console.SetBufferSize(cols%, rows%) ' Then set the buffer size to the now window size...
-    Catch ex As Exception
-      Console.WriteLine("2 - " & ex.ToString)
-      Threading.Thread.Sleep(5000)
-    End Try
-    Try
-      Console.SetWindowSize(cols%, rows%) ' Then set the window size again so that the scroll bar area is removed.
-    Catch ex As Exception
-      Console.WriteLine("3 - " & ex.ToString)
-      Threading.Thread.Sleep(5000)
-    End Try
+    If OperatingSystem.IsWindows Then
+      ' HACK!!! Resize the console window attempting to remove scroll bars.
+      Try
+        Console.SetWindowSize(cols%, rows%) ' Set the windows size...
+      Catch ex As Exception
+        Console.WriteLine("1 - " & ex.ToString)
+        Threading.Thread.Sleep(5000)
+      End Try
+      Try
+        Console.SetBufferSize(cols%, rows%) ' Then set the buffer size to the now window size...
+      Catch ex As Exception
+        Console.WriteLine("2 - " & ex.ToString)
+        Threading.Thread.Sleep(5000)
+      End Try
+      Try
+        Console.SetWindowSize(cols%, rows%) ' Then set the window size again so that the scroll bar area is removed.
+      Catch ex As Exception
+        Console.WriteLine("3 - " & ex.ToString)
+        Threading.Thread.Sleep(5000)
+      End Try
+    End If
   End Sub
 
 End Module
