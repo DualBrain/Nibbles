@@ -1,8 +1,6 @@
 # Nibbles
 
-The QBasic game from 1990 ported to VisualBasic .NET Core for the Console window.
-
-(NOTE: Requires .NET Core 6.0.x.)
+The original QBasic game from 1990's ported to Visual Basic on .NET 6.0.x as a Console application.
 
 ## TODO:
 
