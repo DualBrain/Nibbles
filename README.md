@@ -2,7 +2,7 @@
 
 The QBasic game from 1990 ported to VisualBasic .NET Core for the Console window.
 
-(NOTE: Requires .NET Core 3.0.)
+(NOTE: Requires .NET Core 6.0.x.)
 
 ## TODO:
 
