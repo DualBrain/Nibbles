@@ -1,6 +1,12 @@
 # Nibbles
 
-The original QBasic game from 1990's ported to Visual Basic on .NET 6.0.x as a Console application.
+The original QBasic game from 1990's ported to Visual Basic on .NET 8 as a Console application.
+
+## Discord
+
+Please reach out to me on Discord:
+
+- [Discord Invite](https://discord.gg/Y8EH5fF6WG)
 
 ## TODO:
 
